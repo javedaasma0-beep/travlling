@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelGo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-white">
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur shadow">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
+<h1 class="text-3xl font-bold text-sky-600">
+<i class="fa-solid fa-plane-departure"></i>
+TravelGo
+</h1>
+<ul class="hidden md:flex gap-8 font-semibold">
+<li><a href="#" class="hover:text-sky-600">Home</a></li>
+<li><a href="about.html" class="hover:text-sky-600">About</a></li>
+<li><a href="destinations.html" class="hover:text-sky-600">Destinations</a></li>
+<li><a href="packages.html" class="hover:text-sky-600">Packages</a></li>
+<li><a href="hotel.html" class="hover:text-sky-600">Hotels</a></li>
+<li><a href="#" class="hover:text-sky-600">Contact</a></li>
+</ul>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</nav>
+<!-- Hero -->
+<section class="relative h-screen flex items-center justify-center text-center">
+<img
+src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1600&q=80"
+class="absolute inset-0 w-full h-full object-cover">
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="relative z-10 text-white px-6">
+<p class="uppercase tracking-[6px] mb-4 text-sky-300">
+Adventure Starts Here
+</p>
+<h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+Explore The World
+</h1>
+<p class="mt-6 text-lg max-w-2xl mx-auto text-gray-200">
+Discover beautiful destinations, luxury hotels, unforgettable tours and amazing travel experiences.
+</p>
+<div class="mt-10 flex justify-center gap-4 flex-wrap">
+<a href="packages.html"
+class="bg-sky-600 px-8 py-4 rounded-full hover:bg-sky-700 transition">
+Book Your Trip
+</a>
+<a href="destinations.html"
+class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+Explore More
+</a>
+</div>
+</div>
+</section>
+<!-- Popular Destinations -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-14">
+<p class="text-sky-600 font-semibold uppercase tracking-[4px]">
+Top Destinations
+</p>
+<h2 class="text-4xl md:text-5xl font-bold mt-3">
+Explore Beautiful Places
+</h2>
+<p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+Choose your next destination from our most popular travel locations around the world.
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300 hover:-translate-y-2">
+<img src="images/images.jpg"
+class="w-full h-72 object-cover">
+<div class="p-6">
+<h3 class="text-2xl font-bold">Paris, France</h3>
+<p class="text-gray-500 mt-3">
+Romantic city with iconic landmarks and luxury experiences.
+</p>
+<div class="flex justify-between items-center mt-6">
+<span class="text-sky-600 font-bold">$899</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300 hover:-translate-y-2">
+<img src="images/dubai.jpg"
+class="w-full h-72 object-cover">
+<div class="p-6">
+<h3 class="text-2xl font-bold">Dubai, UAE</h3>
+<p class="text-gray-500 mt-3">
+Luxury shopping, desert safari and world-class attractions.
+</p>
+<div class="flex justify-between items-center mt-6">
+<span class="text-sky-600 font-bold">$699</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300 hover:-translate-y-2">
+<img src="images/bali.jpg"
+class="w-full h-72 object-cover">
+<div class="p-6">
+<h3 class="text-2xl font-bold">Bali, Indonesia</h3>
+<p class="text-gray-500 mt-3">
+Tropical beaches, waterfalls and unforgettable adventures.
+</p>
+<div class="flex justify-between items-center mt-6">
+<span class="text-sky-600 font-bold">$799</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tour Packages -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-center mb-10">
+<div>
+<p class="text-sky-600 uppercase font-semibold">
+Featured Packages
+</p>
+<h2 class="text-4xl font-bold mt-2">
+Best Travel Deals
+</h2>
+</div>
+<a href="#" class="bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700">
+View All
+</a>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 duration-300">
+<img
+src="images/tour.jpg"
+alt="Europe Tour"
+class="w-full h-56 object-cover rounded-2xl mb-6">
+<h3 class="text-2xl font-bold">
+Europe Tour
+</h3>
+<p class="text-gray-500 mt-4">
+7 Days • Flights • Hotels • Breakfast • Guide Included
+</p>
+<div class="mt-6 flex justify-between">
+<span class="text-3xl font-bold text-sky-600">
+$1499
+</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 duration-300">
+<img
+src="images/maldives.jpg"
+alt="Maldives Tour"
+class="w-full h-56 object-cover rounded-2xl mb-6">
+<h3 class="text-2xl font-bold">
+Maldives Tour
+</h3>
+<p class="text-gray-500 mt-4">
+5 Days Luxury Resort with Airport Transfer & Meals.
+</p>
+<div class="mt-6 flex justify-between">
+<span class="text-3xl font-bold text-sky-600">
+$1899
+</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 duration-300">
+<img
+src="images/switzerland.jpg"
+alt="Switzerland Tour"
+class="w-full h-56 object-cover rounded-2xl mb-6">
+<h3 class="text-2xl font-bold">
+Switzerland Tour
+</h3>
+<p class="text-gray-500 mt-4">
+8 Days • Luxury Hotel • Scenic Train • Breakfast Included.
+</p>
+<div class="mt-6 flex justify-between">
+<span class="text-3xl font-bold text-sky-600">
+$2099
+</span>
+<a href="contact.html"
+class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-full">
+Book Now
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="py-20 bg-sky-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<p class="text-sky-600 font-semibold uppercase tracking-[4px]">
+Why Choose Us
+</p>
+<h2 class="text-4xl md:text-5xl font-bold mt-3">
+Travel With Confidence
+</h2>
+<p class="text-gray-500 mt-4 max-w-3xl mx-auto">
+We provide unforgettable travel experiences with affordable prices, premium hotels and 24/7 customer support.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300 text-center">
+<div class="overflow-hidden rounded-2xl mb-6">
+    <img
+    src="images/flight.jpg"
+    alt="Best Flights"
+    class="w-full h-48 object-cover hover:scale-110 duration-500">
+</div>
+<h3 class="text-2xl font-bold">Best Flights</h3>
+<p class="text-gray-500 mt-4">
+Affordable domestic and international flight bookings.
+</p>
+</div>
+<div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300 text-center">
+<div class="overflow-hidden rounded-2xl mb-6">
+    <img
+    src="images/hotel.jpg"
+    alt="Luxury Hotel"
+    class="w-full h-48 object-cover hover:scale-110 duration-500">
+</div>
+<h3 class="text-2xl font-bold">Luxury Hotels</h3>
+<p class="text-gray-500 mt-4">
+Comfortable stays at the world's best hotels and resorts.
+</p>
+</div>
+<div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300 text-center">
+<div class="overflow-hidden rounded-2xl mb-6">
+    <img
+    src="images/travel.jpg"
+    alt="Safe Travel"
+    class="w-full h-48 object-cover hover:scale-110 duration-500">
+</div>
+<h3 class="text-2xl font-bold">Safe Travel</h3>
+<p class="text-gray-500 mt-4">
+Your safety and comfort are always our top priority.
+</p>
+</div>
+<div class="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-300 text-center">
+<div class="overflow-hidden rounded-2xl mb-6">
+    <img
+    src="images/support.jpg"
+    alt="Customer Support"
+    class="w-full h-48 object-cover hover:scale-110 duration-500">
+</div>
+<h3 class="text-2xl font-bold">24/7 Support</h3>
+<p class="text-gray-500 mt-4">
+Our travel experts are available anytime you need help.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STATISTICS ================= -->
+<section class="py-20 bg-sky-600 text-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+<div>
+<h2 class="text-5xl font-bold">15K+</h2>
+<p class="mt-4 text-lg">Happy Travelers</p>
+</div>
+<div>
+<h2 class="text-5xl font-bold">250+</h2>
+<p class="mt-4 text-lg">Destinations</p>
+</div>
+<div>
+<h2 class="text-5xl font-bold">500+</h2>
+<p class="mt-4 text-lg">Luxury Hotels</p>
+</div>
+<div>
+<h2 class="text-5xl font-bold">12+</h2>
+<p class="mt-4 text-lg">Years Experience</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SERVICES ================= -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-14">
+<p class="uppercase tracking-[4px] text-sky-600 font-semibold">
+Our Services
+</p>
+<h2 class="text-4xl md:text-5xl font-bold mt-3">
+Everything You Need
+</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 duration-500">
+<img
+src="images/booking.jpg"
+class="w-full h-56 object-cover hover:scale-110 duration-500">
+<div class="p-6">
+<h3 class="text-2xl font-bold">
+Tour Booking
+</h3>
+<p class="text-gray-500 mt-4">
+Book exciting tours with experienced guides and customized travel packages.
+</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 duration-500">
+<img
+src="images/rental.jpg"
+class="w-full h-56 object-cover hover:scale-110 duration-500">
+<div class="p-6">
+<h3 class="text-2xl font-bold">
+Car Rental
+</h3>
+<p class="text-gray-500 mt-4">
+Choose from luxury, SUV, and economy cars for a comfortable journey.
+</p>
+</div>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 duration-500">
+<img
+src="images/visa.jpg"
+class="w-full h-56 object-cover hover:scale-110 duration-500">
+<div class="p-6">
+<h3 class="text-2xl font-bold">
+Visa Assistance
+</h3>
+<p class="text-gray-500 mt-4">
+Fast and reliable visa processing with expert guidance.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Experiences -->
+<section id="featured" class="py-20 bg-gradient-to-b from-white to-sky-50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-14">
+<p class="text-sky-600 uppercase tracking-[4px] font-semibold">
+Featured Experiences
+</p>
+<h2 class="text-5xl font-bold mt-3">
+Make Every Journey Special
+</h2>
+<p class="text-gray-500 mt-5 max-w-2xl mx-auto">
+Choose unforgettable experiences with our carefully selected travel adventures.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="rounded-3xl overflow-hidden shadow-xl group">
+<div class="overflow-hidden">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+class="w-full h-72 object-cover group-hover:scale-110 duration-500">
+</div>
+<div class="p-6 bg-white">
+<h3 class="text-2xl font-bold">Beach Holiday</h3>
+<p class="text-gray-500 mt-3">
+Relax on the world's most beautiful beaches.
+</p>
+<a href="beach.html"
+class="inline-block mt-6 bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700">
+Learn More
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="rounded-3xl overflow-hidden shadow-xl group">
+<div class="overflow-hidden">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+class="w-full h-72 object-cover group-hover:scale-110 duration-500">
+</div>
+<div class="p-6 bg-white">
+<h3 class="text-2xl font-bold">Mountain Adventure</h3>
+<p class="text-gray-500 mt-3">
+Enjoy hiking and breathtaking mountain views.
+</p>
+<a href="mountain.html"
+class="inline-block mt-6 bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700">
+Learn More
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-3xl overflow-hidden shadow-xl group">
+<div class="overflow-hidden">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+class="w-full h-72 object-cover group-hover:scale-110 duration-500">
+</div>
+<div class="p-6 bg-white">
+<h3 class="text-2xl font-bold">City Tours</h3>
+<p class="text-gray-500 mt-3">
+Discover famous landmarks and local culture.
+</p>
+<a href="city.html"
+class="inline-block mt-6 bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700">
+Learn More
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="rounded-3xl overflow-hidden shadow-xl group">
+<div class="overflow-hidden">
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80"
+class="w-full h-72 object-cover group-hover:scale-110 duration-500">
+</div>
+<div class="p-6 bg-white">
+<h3 class="text-2xl font-bold">Luxury Cruise</h3>
+<p class="text-gray-500 mt-3">
+Experience unforgettable luxury cruises around the world.
+</p>
+<a href="cruise.html"
+class="inline-block mt-6 bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700">
+Learn More
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TRAVEL GALLERY ================= -->
+<section class="py-20 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-14">
+<span class="text-sky-600 uppercase tracking-[4px] font-semibold">
+Travel Gallery
+</span>
+<h2 class="text-5xl font-bold mt-4">
+Captured Moments
+</h2>
+<p class="text-gray-500 mt-5 max-w-2xl mx-auto">
+Explore some of the world's most breathtaking destinations through our travel gallery.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<img src="images/images (1).jpg"
+class="rounded-3xl h-72 w-full object-cover hover:scale-105 duration-500 cursor-pointer">
+<img src="images/images (2).jpg"
+class="rounded-3xl h-72 w-full object-cover hover:scale-105 duration-500 cursor-pointer">
+<img src="images/images (3).jpg"
+class="rounded-3xl h-72 w-full object-cover hover:scale-105 duration-500 cursor-pointer">
+<img src="images/images (4).jpg"
+class="rounded-3xl h-72 w-full object-cover hover:scale-105 duration-500 cursor-pointer">
+</div>
+</div>
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<p class="uppercase tracking-[4px] text-sky-600 font-semibold">
+Testimonials
+</p>
+<h2 class="text-5xl font-bold mt-3">
+What Our Travelers Say
+</h2>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 duration-300">
+<img src="images/Alisha.jpg"
+class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-sky-500">
+<h3 class="text-2xl font-bold text-center">
+Alisha
+</h3>
+<p class="text-yellow-500 text-center text-xl mt-2">
+★★★★★
+</p>
+<p class="text-gray-500 mt-5 text-center">
+Amazing service! Everything was perfectly organized and the hotels were fantastic.
+</p>
+</div>
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 duration-300">
+<img src="images/haider.jpg"
+class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-sky-500">
+<h3 class="text-2xl font-bold text-center">
+Haider
+</h3>
+<p class="text-yellow-500 text-center text-xl mt-2">
+★★★★★
+</p>
+<p class="text-gray-500 mt-5 text-center">
+Our family vacation was unforgettable. Excellent support and affordable packages.
+</p>
+</div>
+<div class="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 duration-300">
+<img src="images/Asma.jpg"
+class="w-20 h-20 rounded-full mx-auto mb-5 border-4 border-sky-500">
+<h3 class="text-2xl font-bold text-center">
+Asma
+</h3>
+<p class="text-yellow-500 text-center text-xl mt-2">
+★★★★★
+</p>
+<p class="text-gray-500 mt-5 text-center">
+Best travel company! I highly recommend them for luxury vacations.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= NEWSLETTER ================= -->
+<section class="py-20 bg-sky-600">
+<div class="max-w-4xl mx-auto text-center px-6">
+<h2 class="text-5xl font-bold text-white">
+Subscribe Our Newsletter
+</h2>
+<p class="text-sky-100 mt-5 text-lg">
+Get the latest travel deals, offers and destination updates directly in your inbox.
+</p>
+<div class="mt-10 flex flex-col md:flex-row gap-4">
+<input
+type="email"
+placeholder="Enter your email"
+class="flex-1 px-6 py-4 rounded-full outline-none">
+<button
+class="bg-white text-sky-600 font-bold px-8 py-4 rounded-full hover:bg-gray-100 duration-300">
+Subscribe
+</button>
+</div>
+</div>
+</section>
+<!-- ================= FAQ SECTION ================= -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-5xl mx-auto px-6">
+<div class="text-center mb-12">
+<p class="uppercase tracking-[4px] text-sky-600 font-semibold">
+FAQ
+</p>
+<h2 class="text-5xl font-bold mt-3">
+Frequently Asked Questions
+</h2>
+</div>
+<div class="space-y-5">
+<details class="bg-white rounded-2xl shadow p-6">
+<summary class="font-bold text-lg cursor-pointer">
+How can I book a tour?
+</summary>
+<p class="mt-4 text-gray-600">
+Choose your destination, select your package, and complete your booking online.
+</p>
+</details>
+<details class="bg-white rounded-2xl shadow p-6">
+<summary class="font-bold text-lg cursor-pointer">
+Do you provide visa assistance?
+</summary>
+<p class="mt-4 text-gray-600">
+Yes, we help with tourist and business visa applications for many countries.
+</p>
+</details>
+<details class="bg-white rounded-2xl shadow p-6">
+<summary class="font-bold text-lg cursor-pointer">
+Can I cancel my booking?
+</summary>
+<p class="mt-4 text-gray-600">
+Yes, cancellation depends on the package terms and booking policy.
+</p>
+</details>
+</div>
+</div>
+</section>
+</section>
+<!-- ================= MAP ================= -->
+<section>
+<iframe
+src="https://www.google.com/maps?q=gujrat&output=embed"
+class="w-full h-[500px]"
+loading="lazy">
+</iframe>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-white pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+<div>
+<h2 class="text-3xl font-bold text-sky-400">
+TravelGo
+</h2>
+<p class="text-gray-400 mt-5">
+Discover the world's most beautiful destinations with our premium travel services.
+</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-5">
+Quick Links
+</h3>
+<ul class="space-y-3 text-gray-400">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="hotel.html">Hotels</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-5">
+Services
+</h3>
+<ul class="space-y-3 text-gray-400">
+<li>Flight Booking</li>
+<li>Hotel Booking</li>
+<li>Visa Services</li>
+<li>Car Rental</li>
+<li>Travel Insurance</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-5">
+Follow Us
+</h3>
+<div class="flex gap-4 text-2xl">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400">
+© 2026 TravelGo. All Rights Reserved.
+</div>
+</footer>
+<!-- ================= BACK TO TOP BUTTON ================= -->
+<button
+onclick="window.scrollTo({top:0,behavior:'smooth'})"
+class="fixed bottom-6 right-6 bg-sky-600 text-white w-14 h-14 rounded-full shadow-xl hover:bg-sky-700">
+<i class="fas fa-arrow-up"></i>
+</button>
+</body>
+</html>
